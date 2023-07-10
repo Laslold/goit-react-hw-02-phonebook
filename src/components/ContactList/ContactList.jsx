@@ -4,7 +4,7 @@ import Button from 'components/Button/Button';
 const ContactList = ({ contacts, removeContact }) => {
   const elem = contacts.map(({ id, name, number }) => (
     <ListStyled key={id}>
-      {name}: {number}
+      {name} : {number}
       <Button onClick={() => removeContact(id)}>Delete</Button>
     </ListStyled>
   ));
